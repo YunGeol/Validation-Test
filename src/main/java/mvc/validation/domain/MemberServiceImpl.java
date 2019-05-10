@@ -9,10 +9,15 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public Member getMember(int memberNo) {
+        Member member = new Member();
+        member.setMemberName(this.memberName);
+        member.setMemberNo(memberNo);
+        return member;
+    }
 
-        return Member.builder()
-                     .memberNo(memberNo)
-                     .memberName(memberName)
-                     .build();
+    @Override
+    public boolean insertMember(Member member) {
+        // logic ...
+        return true;
     }
 }

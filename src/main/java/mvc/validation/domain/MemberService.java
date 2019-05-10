@@ -1,5 +1,7 @@
 package mvc.validation.domain;
 
 public interface MemberService {
-    public Member getMember(int memberNo);
+    Member getMember(int memberNo);
+
+    boolean insertMember(Member member);
 }
