@@ -6,13 +6,14 @@ import org.junit.Test;
 import static io.restassured.module.mockmvc.RestAssuredMockMvc.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class MemberControllerTest {
-    // /members/{memberNo}/addresses?limit=숫자&encryption=true/false
-
+public class RestAssuredTest {
+    /**
+     * This testcase can not check validation
+     */
     @Test
     public void get_member_info_test() {
 
-        int memberNo = 12345;
+        int memberNo = 99999;
 
         given()
             .standaloneSetup(

@@ -1,6 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.1.4.RELEASE'
     id 'java'
+    id 'io.freefair.lombok' version '3.2.1'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -22,9 +23,6 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
 
     testImplementation 'io.rest-assured:rest-assured'
     testImplementation 'io.rest-assured:spring-mock-mvc'
